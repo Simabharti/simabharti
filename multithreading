@@ -1,0 +1,39 @@
+package com.sima_project;
+class  MyThread extends Thread{
+    public void  run(){
+        int i=0;
+        while (i<=4){
+            System.out.println("i am doing code on laptop");
+            System.out.println("what are you");
+        }
+    }
+}
+class myThread1 extends  Thread{
+    public void run(){
+        int i= 0;
+        while (i<=5){
+            System.out.println("i am talking with rohini");
+            System.out.println("about wedding");
+        }
+    }
+}
+class myThread2 extends  Thread{
+    public void run(){
+        int i= 0;
+        while (i<=5){
+            System.out.println(" Baba,Dadi BABA DADI");
+            System.out.println("papa  and mammmy is my heart");
+        }
+    }
+}
+public class multhithreading {
+    public static void main(String[] args) {
+        MyThread t=new MyThread();
+        myThread1 t1=new myThread1();
+        myThread2 t2=new myThread2();
+           t.start();
+           t1.start();
+           t2.start();
+
+    }
+}
